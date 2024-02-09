@@ -10,7 +10,7 @@ body {
 
 .wrapper {}
 
-/*--------Шапка------------------------------*/
+/*Шапка*/
 .main {
 	display: flex;
 	flex-direction: column;
@@ -26,7 +26,6 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
-	/* 150% */
 	letter-spacing: -0.2px;
 	text-transform: uppercase;
 }
@@ -66,9 +65,8 @@ body {
 	}
 }
 
-/*--------Тело------------------------------*/
-/*----Слайдер-----*/
-/*----------*/
+/*Тело*/
+/*Слайдер*/
 .brends {
 	display: flex;
 }
@@ -94,9 +92,25 @@ body {
 }
 
 .brends__arrow {
-	width: 40px;
-	height: 40px;
+	width: 38px;
+	height: 38px;
+	border: 2px solid black;
+	border-radius: 19px;
+	border-color: #FF3E79;
+	background-image: url('./img/dropdown.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	background-position: center;
 }
+
+.circle {
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	border-color: #FF3E79;
+}
+
 
 @media (min-width: 320px) {
 	.brends {
@@ -121,7 +135,6 @@ body {
 	}
 }
 
-/*--------------------*/
 @media (min-width: 768px) {
 	.brends {
 		flex-wrap: wrap;
@@ -153,7 +166,7 @@ body {
 	}
 }
 
-/*------------Кнопка------------*/
+/*Кнопка*/
 .button {
 	padding-left: 32px;
 }
@@ -161,7 +174,7 @@ body {
 .button--more::before {
 	position: relative;
 	top: 5px;
-	content: url("../img/expand.svg");
+	content: url('./img/expand.svg');
 }
 
 .button--more::after {
@@ -169,7 +182,7 @@ body {
 }
 
 .button--less::before {
-	content: url("../img/expand.svg");
+	content: url("./img/expand.svg");
 	display: inline-block;
 	transform: scale(-1);
 }
@@ -189,7 +202,6 @@ body {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 24px;
-	/* 150% */
 	letter-spacing: -0.2px;
 }
 
@@ -204,5 +216,3 @@ body {
 		display: block;
 	}
 }
-
-/*-------------------------------------------------*/
